@@ -1,5 +1,6 @@
 #!/bin/sh
 # Set a pdf reader here, followed by the path to your books
+
 pdfreader='evince'
 bookpath="$HOME/documents/books/"
 echo "<openbox_pipe_menu>"
