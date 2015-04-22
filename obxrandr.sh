@@ -1,4 +1,5 @@
 #!/bin/sh
+
 echo "<openbox_pipe_menu>"
 files=$(
   ls ~/.screenlayout | grep ".sh"  |  while read line; 
