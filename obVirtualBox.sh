@@ -7,10 +7,18 @@ vms=$(
     name=$(echo $line | cut -d. -f1)
     echo "<menu id=\"$name\" label=\"$name\">
 
-      <item label=\"start\">
+      <item label=\"start gui\">
         <action name=\"Execute\">
           <command>
           vboxmanage startvm --type gui \"$name\"
+          </command>
+        </action>
+      </item>
+
+      <item label=\"start headless\">
+        <action name=\"Execute\">
+          <command>
+          vboxmanage startvm --type headless \"$name\"
           </command>
         </action>
       </item>
