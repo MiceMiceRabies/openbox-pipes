@@ -1,7 +1,7 @@
 #!/bin/sh
 echo "<openbox_pipe_menu>"
 vms=$(
-  vboxmanage list vms | cut -d'"' -f2 |while read line;
+  vboxmanage list vms | grep -v inaccessible | cut -d'"' -f2 |while read line;
     do  
     vms=$(echo "$line")
     name=$(echo $line | cut -d. -f1)
