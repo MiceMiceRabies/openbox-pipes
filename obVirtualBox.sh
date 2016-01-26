@@ -53,7 +53,7 @@ done);
 
 echo "$vms"
 
-echo "<separator />"
+echo "<separator label=\"Config Window\"/>"
 echo "<item label=\"Open VirtualBox\">
     <action name=\"Execute\"><command>virtualbox</command></action>
   </item>"
